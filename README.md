@@ -20,7 +20,7 @@ This challenge is being done by @Norman10 and @Dario from Frontend Mentor.
   - Any `input` field is empty. The message for this error should say *"[Field Name] cannot be empty"*
   - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Looks like this is not an email"*
 
-## Notes for callobarators (@Norman10 and @Dario)
+## Plan workflow for callobarators
 
 - [x] Creation of repo (is done).
 - [x] Create HTML layout (is done).
