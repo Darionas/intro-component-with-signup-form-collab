@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400..700&display=swap');
+@import url(reset.css);
+@import url(FM_part.css);
+
+:root {
+    /* colors */
+    --clr-primary-red: hsl(0, 100%, 74%);
+    --clr-green: hsl(154, 59%, 51%);
+    --clr-accent-blue: hsl(248, 32%, 49%);
+    --clr-neutral-dblue: hsl(249, 10%, 26%);
+    --clr-neutral-gblue: hsl(246, 25%, 77%);
+
+    /* fonts */
+    --ff-primary: 'Poppins', sans-serif;
+
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+
+    --fs-16m: 4.267vw;
+    --fs-16d: 1rem;
+}
