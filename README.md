@@ -12,8 +12,8 @@ This challenge is being done by @Norman10 and @Dario from Frontend Mentor.
 
 ## Main goal for challenge
 
-- Practice deal with GitHub as a owner of repo and as a callobarator, and vice versa.
-- For callobaration practice Markdown.
+- Practice deal with GitHub as a owner of repo and as a collaborator, and vice versa.
+- For collaboration practice Markdown.
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Receive an error message when the `form` is submitted if:
