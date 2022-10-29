@@ -25,7 +25,7 @@ This challenge is being done by @Norman10 and @Dario from Frontend Mentor.
 - [x] Creation of repo (is done).
 - [x] Create HTML layout (is done).
 - [x] Create CSS layouts according style guides (1st our task).
-- [ ] Create grid layout for mobile first, and desktop (2nd our task).
+- [x] Create grid layout for mobile first, and desktop (2nd our task).
 - [ ] Implement code solutions on HTML and CSS (3rd our task).
 - [ ] Implement JavaScript (4rd our task).
 - [ ] Overview of solutions and RWD (5th our task).
