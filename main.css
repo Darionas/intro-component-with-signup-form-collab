@@ -18,6 +18,107 @@
     --fw-600: 600;
     --fw-700: 700;
 
-    --fs-16m: 4.267vw;
-    --fs-16d: 1rem;
+}
+
+/* typography */
+html {
+    /* 62.5% of 16px browser font size is 10px */
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    /* It returns default value of browser (16px) */
+    font-size: 1.6em;
+    min-height: 100%;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* typography end */
+
+body {
+    font-family: var(--ff-primary);
+    background-color: var(--clr-primary-red);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------------------Mobile layout-------------------------*/
+
+body { 
+    background-image: url("images/bg-intro-mobile.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'intro'
+        'fsubm'
+        'attribution';
+    min-width: 37.5rem;
+    border: 2px solid green;
+}
+
+/* style 1st component - mobile */
+
+
+
+/* style 2nd component - mobile */
+
+
+/* style 3rd component - mobile */
+
+/*---------------------Desktop layout------------------------*/
+@media screen and (min-width: 48rem) {
+   /* * {
+        display: none;
+    }*/
+
+    body { 
+        background-image: url("images/bg-intro-desktop.png"); 
+        background-repeat: no-repeat;
+        background-size: cover;  
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'intro fsubm'
+            'attribution attribution';
+        gap: 2rem;
+        border: 2px solid green;
+    }
+
+    /* style 1st component - desktop */
+
+
+    /* style 2nd component - desktop */
+
+
+
+    /* style 3rd component - desktop */
+
+
+}
+
+
+/*--------------------grid area names--------------------------*/
+
+.intro {
+    grid-area: intro;
+}
+
+.fsubm {
+    grid-area: fsubm;
+}
+
+.attribution {
+    grid-area: attribution;
 }
