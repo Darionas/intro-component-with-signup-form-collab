@@ -15,30 +15,42 @@
     <div class="grid-container">
       <!--Component_1-->
       <main class="intro">
-          <h1 class="heading">Heading1</h1>
-          <p class="desc">Hello to programming tutorial</p>
+          <h1 class="intro__title">Learn to code by watching others</h1>
+          <p class="intro__description">See how experienced developers solve problems in real-time.
+            Watching scripted tutorials is great, but understanding how developers
+            think is invaluable.</p>
       </main>
       <!--Component_2-->
-      <div class="fsubm">
-         <p class="offer"><span class="try">Try it free 7 days</span> then $20/mo. thereafter</p>
+      <div class="form-container">
+         <p class="form-container__offer"><span class="bolding">Try it free 7 days</span> then $20/mo. thereafter</p>
          <form class="form">
-            <input class="fName" type="text" placeholder="First Name"/>
-            <p class="valid_1">validation_1</p>
-            <input class="lName" type="text" placeholder="Last Name"/>
-            <p class="valid_2">validation_2</p>
-            <input class="email" type="email" placeholder="Email Address"/>
-            <p class="valid_3">validation_3</p>
-            <input class="pswd" type="password" placeholder="Password"/>
-            <p class="valid_4">validation_4</p>
+            
+                <input class="input-fName" type="text" placeholder="First Name"/>
+                <img class="input-fName__err" src="images/icon-error.svg" alt="Error icon"/>
+                <p class="input-fName__validation">First Name cannot be empty</p>
+            
+
+            <input class="input-lName" type="text" placeholder="Last Name"/>
+            <img src="images/icon-error.svg" alt="Error icon" class="input-lName__err"/>
+            <p class="input-lName__validation">Last Name cannot be empty</p>
+
+            <input class="input-email" type="email" placeholder="Email Address"/>
+            <img src="images/icon-error.svg" alt="Error icon" class="input-email__err"/>
+            <p class="input-email__validation">Looks like this is not email</p>
+
+            <input class="input-pswd" type="password" placeholder="Password"/>
+            <img src="images/icon-error.svg" alt="Error icon" class="input-pswd__err"/>
+            <p class="input-pswd__validation">Password cannot be empty</p>
+
             <input class="btn" type="button" value="CLAIM YOUR FREE TRIAL"/>
-            <p class="agree">By clicking the button, you are agreeing to our <span class="terms">Terms and Services</span></p>
+            <p class="agreement">By clicking the button, you are agreeing to our <span class="agreement__terms">Terms and Services</span></p>
          </form>
       </div>
       <!--Component_3-->
-       <div class="attribution">
+       <footer class="attribution">
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
           Coded by <a href="#">@Darionas</a>.
-       </div>
+       </footer>
     </div>
   
 </body>

@@ -1,35 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Poppins:wght@400..700&display=swap');
 @import url(reset.css);
 @import url(FM_part.css);
 
 :root {
     /* colors */
     --clr-primary-red: hsl(0, 100%, 74%);
-    --clr-green: hsl(154, 59%, 51%);
+    --clr-secondary-green: hsl(154, 59%, 51%);
     --clr-accent-blue: hsl(248, 32%, 49%);
     --clr-neutral-dblue: hsl(249, 10%, 26%);
     --clr-neutral-gblue: hsl(246, 25%, 77%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-shad: rgba(0, 0, 0, 0.1);
+    /*--clr-inp: hsl(0, 0%, 83%);*/
 
     /* fonts */
     --ff-primary: 'Poppins', sans-serif;
 
-    --fw-400: 400;
+    --fw-400: 400; /* base */
     --fw-500: 500;
     --fw-600: 600;
     --fw-700: 700;
 
+    --fs-10: 0.625rem;
+    --fs-12: 0.75rem;
+    --fs-14: 0.875rem;
+    --fs-16: 1rem;  /* base */
+    --fs-18: 1.125rem;
+    --fs-20: 1.25rem;
+    --fs-22: 1.375rem;
+    --fs-24: 1.5rem;
+    --fs-26: 1.625rem;
+    --fs-28: 1.75rem;
+    --fs-30: 1.875rem;
+    --fs-32: 2rem;
+    --fs-40: 2.5rem;
 }
 
 /* typography */
 html {
     /* 62.5% of 16px browser font size is 10px */
-    font-size: 62.5%;
+    /*font-size: 62.5%;*/
     height: 100%;
 }
 
 body {
     /* It returns default value of browser (16px) */
-    font-size: 1.6em;
+    /*font-size: 1.6em;*/
     min-height: 100%;
 }
 
@@ -41,6 +57,8 @@ p {
 
 body {
     font-family: var(--ff-primary);
+    font-size: var(--fs-16);
+    font-weight: var(--fw-400);
     background-color: var(--clr-primary-red);  
     display: flex;
     justify-content: center;
@@ -51,8 +69,11 @@ body {
 
 body { 
     background-image: url("images/bg-intro-mobile.png"); 
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;  
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: var(--clr-primary-red); 
 }
 
 .grid-container {
@@ -60,24 +81,202 @@ body {
     grid-template-columns: 1fr;
     grid-template-areas:
         'intro'
-        'fsubm'
+        'form-container'
         'attribution';
-    min-width: 37.5rem;
-    border: 2px solid green;
+    /*min-width: 37.5rem;*/
+    /*min-width: 80%;*/
+    gap: 1rem;
+    justify-self: center;
+    justify-items: center;
+    padding: 2rem 0;
+    /*border: 2px solid green;*/
 }
 
 /* style 1st component - mobile */
+.intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'intro__title'
+        'intro__description';
+    gap: 1.5rem;
+    justify-items: center;
+    text-align: center;
+    color: var(--clr-white);
+    /*border: 2px solid green;*/
+}
 
+.intro__title {
+    font-size: var(--fs-32);
+    font-weight: var(--fw-700);
+    width: 100%;
+    /*border: 2px solid green;*/
+}
 
+.intro__description {
+    font-size: var(--fs-14);
+    font-weight: var(--fw-500);
+    max-width:  27rem;
+    padding: 0 0.5rem;
+    /*border: 2px solid green;*/
+}
 
 /* style 2nd component - mobile */
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'form-container__offer'
+        'form';
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 1rem;
+    /*border: 2px solid green;*/
+}
 
+.form-container__offer {
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: var(--clr-white);
+    background-color: var(--clr-accent-blue);
+    border-radius: 0.8rem;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    box-shadow: 0rem 0.6rem var(--clr-shad);
+    /*border: 2px solid green;*/
+}
+
+.bolding {
+    font-weight: var(--fw-700);
+}
+
+.form {
+    display: block;
+    background-color: var(--clr-white);
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    box-shadow: 0rem 0.6rem var(--clr-shad);
+}
+
+/* centering input field in a frorm */
+.input-fName,
+.input-lName,
+.input-email, 
+.input-pswd {
+    display: block;
+    margin: auto;
+    border: 1px solid var(--clr-neutral-gblue);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+::placeholder {
+    font-size: var(--fs-14);
+    font-weight: var(--fw-600);
+    color: var(--clr-neutral-dblue);
+    opacity: 0.7;
+}
+
+[class^='input-'][class$='__err'] {
+    position: absolute;
+    visibility: hidden;
+}
+
+[class^='input-'][class$='__validation'] {
+    position: absolute;
+    font-size: var(--fs-10);
+    color: var(--clr-primary-red);
+    visibility: hidden;
+}
+
+.input-fName__err {
+    right: 2.5rem;
+    top: 2.5rem;
+    border: 2px solid green;
+}
+
+.input-fName__validation {
+    right: 1.8rem;
+    top: 4.8rem;
+}
+
+.input-lName__err {
+    right: 2.5rem;
+    top: 7rem;
+    border: 2px solid green;
+}
+
+.input-lName__validation {
+    right: 1.8rem;
+    top: 9.7rem;
+}
+
+.input-email__err {
+    right: 2.5rem;
+    top: 11.7rem;
+    border: 2px solid green;
+}
+
+.input-email__validation {
+    right: 1.8rem;
+    top: 14.4rem;
+}
+
+.input-pswd__err {
+    right: 2.5rem;
+    top: 16.5rem;
+    border: 2px solid green;
+}
+
+.input-pswd__validation {
+    right: 1.8rem;
+    top: 19.2rem;
+}
+
+.btn {
+    display: block;
+    margin: auto;
+    width: 100%;
+    background-color: var(--clr-secondary-green);
+    border-radius: 0.5rem;
+    border: none;
+    padding: 1rem;
+    color: var(--clr-white);
+    font-size: var(--fs-14);
+    font-weight: var(--fw-500);
+    cursor: pointer;
+}
+
+.agreement {
+    text-align: center;
+    display: inline-block;
+    font-size: var(--fs-10);
+    font-weight: var(--fw-500);
+    color: var(--clr-neutral-gblue);
+    padding: 0.6rem 1.5rem;
+}
+
+.agreement__terms {
+    color: var(--clr-primary-red);
+    font-weight: var(--fw-700);
+}
 
 /* style 3rd component - mobile */
+.attribution {
+    width: 80%;
+}
 
 /*---------------------Desktop layout------------------------*/
 @media screen and (min-width: 48rem) {
-   /* * {
+  /*
+   * {
         display: none;
     }*/
 
@@ -90,21 +289,44 @@ body {
     .grid-container {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-            'intro fsubm'
+            'intro form-container'
             'attribution attribution';
-        gap: 2rem;
-        border: 2px solid green;
+        gap: 1rem;
+        justify-self: center;
+        /*border: 2px solid green;*/
     }
 
     /* style 1st component - desktop */
+    .intro {
+        width: 65%;
+        justify-self: end;
+        gap: 1.5rem;
+    }
 
+    .intro__title {
+        font-size: var(--fs-40);
+        text-align: left;
+        align-self: end;
+        padding: 0 0 0 1rem;
+        /*border: 2px solid green;*/
+    }
+
+    .intro__description {
+        text-align: left;
+        align-self: start;
+        padding: 0 0 0 1rem;
+        /*border: 2px solid green;*/
+    }
 
     /* style 2nd component - desktop */
-
-
+   .form-container {
+        width: 65%;
+        justify-self: start;
+        /*border: 2px solid green;*/
+    }
 
     /* style 3rd component - desktop */
-
+    /* 3rd component is styled in external style sheet */
 
 }
 
@@ -115,8 +337,24 @@ body {
     grid-area: intro;
 }
 
-.fsubm {
-    grid-area: fsubm;
+.intro__title {
+    grid-area: intro__title;
+}
+
+.intro__description {
+    grid-area: intro__description;
+}
+
+.form-container {
+    grid-area: form-container;
+}
+
+.form-container__offer {
+    grid-area: form-container__offer;
+}
+
+.form {
+    grid-area: form;
 }
 
 .attribution {

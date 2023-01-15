@@ -2,8 +2,6 @@
 
 ## Welcome! 👋
 
-This challenge is being done by @Norman10 and @Dario from Frontend Mentor.
-
 ## Challenge based on
 
 - HTML
@@ -12,8 +10,7 @@ This challenge is being done by @Norman10 and @Dario from Frontend Mentor.
 
 ## Main goal for challenge
 
-- Practice deal with GitHub as a owner of repo and as a collaborator, and vice versa.
-- For collaboration practice Markdown.
+- Explore BEM stands for Block-Element-Modifier
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Receive an error message when the `form` is submitted if:
@@ -22,17 +19,12 @@ This challenge is being done by @Norman10 and @Dario from Frontend Mentor.
 
 ## Plan workflow for collaborators
 
-- [x] Creation of repo (is done).
-- [x] Create HTML layout (is done).
-- [x] Create CSS layouts according style guides (1st our task).
-- [x] Create grid layout for mobile first, and desktop (2nd our task).
-- [ ] Implement code solutions on HTML and CSS (3rd our task).
-- [ ] Implement JavaScript (4rd our task).
-- [ ] Overview of solutions and RWD (5th our task).
-- [ ] Tada it is done. Congratulation you rich your goals.🎉
-
-## Issues
-
-1.
-2.
-3.
+- [x] Create drawing from design (structure of design)(1st task)
+- [x] Create of repo (2nd task)
+- [x] Create HTML layout (3rd task)
+- [x] Create CSS layout according style guides (4th task)
+- [x] Create grid layout for mobile first (5th task)
+- [x] Craete grid layout for desktop (6th task)
+- [ ] Implement JavaScript (7th task)
+- [ ] Overview of solution and RWD (8th task)
+- [ ] Tada it is done. Congratulation you reach your goal.🎉
