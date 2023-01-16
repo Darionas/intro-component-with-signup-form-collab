@@ -138,6 +138,7 @@ body {
     display: block;
     margin: auto;
     text-align: center;
+    font-weight: var(--fw-400);
     color: var(--clr-white);
     background-color: var(--clr-accent-blue);
     border-radius: 0.8rem;
@@ -186,57 +187,51 @@ body {
 
 [class^='input-'][class$='__err'] {
     position: absolute;
+    right: 2.5rem;
     visibility: hidden;
 }
 
 [class^='input-'][class$='__validation'] {
     position: absolute;
+    right: 1.5rem;
     font-size: var(--fs-10);
     color: var(--clr-primary-red);
     visibility: hidden;
 }
 
 .input-fName__err {
-    right: 2.5rem;
     top: 2.5rem;
-    border: 2px solid green;
+    /*border: 2px solid green;*/
 }
 
 .input-fName__validation {
-    right: 1.8rem;
     top: 4.8rem;
 }
 
 .input-lName__err {
-    right: 2.5rem;
-    top: 7rem;
-    border: 2px solid green;
+    top: 7.2rem;
+    /*border: 2px solid green;*/
 }
 
 .input-lName__validation {
-    right: 1.8rem;
-    top: 9.7rem;
+    top: 9.6rem;
 }
 
 .input-email__err {
-    right: 2.5rem;
-    top: 11.7rem;
-    border: 2px solid green;
+    top: 12rem;
+    /*border: 2px solid green;*/
 }
 
 .input-email__validation {
-    right: 1.8rem;
     top: 14.4rem;
 }
 
 .input-pswd__err {
-    right: 2.5rem;
-    top: 16.5rem;
-    border: 2px solid green;
+    top: 16.8rem;
+    /*border: 2px solid green;*/
 }
 
 .input-pswd__validation {
-    right: 1.8rem;
     top: 19.2rem;
 }
 
