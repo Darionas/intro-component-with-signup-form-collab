@@ -123,6 +123,10 @@ body {
     /*border: 2px solid green;*/
 }
 
+.sr-only {
+    display: none;
+}
+
 .form-container__offer {
     display: block;
     margin: auto;
