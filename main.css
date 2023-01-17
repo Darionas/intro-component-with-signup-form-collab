@@ -11,7 +11,6 @@
     --clr-neutral-gblue: hsl(246, 25%, 77%);
     --clr-white: hsl(0, 0%, 100%);
     --clr-shad: rgba(0, 0, 0, 0.1);
-    /*--clr-inp: hsl(0, 0%, 83%);*/
 
     /* fonts */
     --ff-primary: 'Poppins', sans-serif;
@@ -22,16 +21,8 @@
     --fw-700: 700;
 
     --fs-10: 0.625rem;
-    --fs-12: 0.75rem;
     --fs-14: 0.875rem;
     --fs-16: 1rem;  /* base */
-    --fs-18: 1.125rem;
-    --fs-20: 1.25rem;
-    --fs-22: 1.375rem;
-    --fs-24: 1.5rem;
-    --fs-26: 1.625rem;
-    --fs-28: 1.75rem;
-    --fs-30: 1.875rem;
     --fs-32: 2rem;
     --fs-40: 2.5rem;
 }
@@ -83,8 +74,6 @@ body {
         'intro'
         'form-container'
         'attribution';
-    /*min-width: 37.5rem;*/
-    /*min-width: 80%;*/
     gap: 1rem;
     justify-self: center;
     justify-items: center;
@@ -165,10 +154,7 @@ body {
 }
 
 /* centering input field in a frorm */
-.input-fName,
-.input-lName,
-.input-email, 
-.input-pswd {
+.input {
     display: block;
     margin: auto;
     border: 1px solid var(--clr-neutral-gblue);
@@ -185,13 +171,20 @@ body {
     opacity: 0.7;
 }
 
-[class^='input-'][class$='__err'] {
+/* change placeholder color */
+/* https://stackoverflow.com/questions/30117939/how-to-change-the-colour-of-placeholder-using-javascript#30117998 */
+.placeholder_red::-webkit-input-placeholder {
+    color: var(--clr-primary-red);
+}
+
+
+.input__err {
     position: absolute;
     right: 2.5rem;
     visibility: hidden;
 }
 
-[class^='input-'][class$='__validation'] {
+.input__validation {
     position: absolute;
     right: 1.5rem;
     font-size: var(--fs-10);
@@ -199,39 +192,39 @@ body {
     visibility: hidden;
 }
 
-.input-fName__err {
+.input__err--fName {
     top: 2.5rem;
     /*border: 2px solid green;*/
 }
 
-.input-fName__validation {
+.input__validation--fName {
     top: 4.8rem;
 }
 
-.input-lName__err {
+.input__err--lName {
     top: 7.2rem;
     /*border: 2px solid green;*/
 }
 
-.input-lName__validation {
+.input__validation--lName {
     top: 9.6rem;
 }
 
-.input-email__err {
+.input__err--email {
     top: 12rem;
     /*border: 2px solid green;*/
 }
 
-.input-email__validation {
+.input__validation--email {
     top: 14.4rem;
 }
 
-.input-pswd__err {
+.input__err--pswd {
     top: 16.8rem;
     /*border: 2px solid green;*/
 }
 
-.input-pswd__validation {
+.input__validation--pswd {
     top: 19.2rem;
 }
 
@@ -247,6 +240,10 @@ body {
     font-size: var(--fs-14);
     font-weight: var(--fw-500);
     cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.7;
 }
 
 .agreement {
@@ -270,10 +267,6 @@ body {
 
 /*---------------------Desktop layout------------------------*/
 @media screen and (min-width: 48rem) {
-  /*
-   * {
-        display: none;
-    }*/
 
     body { 
         background-image: url("images/bg-intro-desktop.png"); 
@@ -319,6 +312,7 @@ body {
         justify-self: start;
         /*border: 2px solid green;*/
     }
+
 
     /* style 3rd component - desktop */
     /* 3rd component is styled in external style sheet */
