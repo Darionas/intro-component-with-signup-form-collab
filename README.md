@@ -1,26 +1,32 @@
-# Frontend Mentor - Intro component with sign up form solution
+# Frontend Mentor challenge -  Intro component with sign up form
 
-This is a solution to the [Intro component with sign up form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1).
+## Contributing to project
 
-## Table of contents
+## Welcome! 👋
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+&nbsp;A big welcome and thank you for considering contributing to open source project!
+Reading and following these guidlines will help us make the contribution process easy and effective for everyone involved. It also
+communicates that you agree to respect the time of the developers managing and developing these open source projects. In return, we will reciprocate that respect by addressing your issue, assessing changes, and helping you finalize your pull requests. 
 
-## Overview
+## Quicklinks
 
-### The challenge
+* [Challenge based on](#challenge-intermediate-based-on) 
+* [Main goal for challenge](#main-goal-for-challenge)
+* [Plan workflow](#plan-workflow)
+* [We use GitHub flow, so all code changes happen through Pull Request](#we-use-github-flow-so-all-code-changes-happen-through-pull-request)
+* [Dealing with issues](#dealing-with-issues)
+* [Use a consistent coding style](#use-a-consistent-coding-style)
+* [License](#license)
+* [References](#references)
 
-Users should be able to:
+
+## Challenge newbie based on
+
+- HTML (BEM technique)
+- CSS (grid layout)
+- JavaScript
+
+## Main goal for challenge
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
@@ -28,60 +34,57 @@ Users should be able to:
   - Any `input` field is empty. The message for this error should say *"[Field Name] cannot be empty"*
   - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Looks like this is not an email"*
 
-### Screenshot
+## Plan workflow
 
-![Intro component with sign up form solution](./images/Intro_component_with_sign_up_form_solution.png)
-
-### Links
-
-- Solution URL: (https://github.com/Darionas/intro-component-with-signup-form-m)
-- Live Site URL: (https://darionas.github.io/intro-component-with-signup-form-m/)
-
-## My process
-
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties:
-    - Flexbox
-    - CSS Grid
-    - Mobile-first workflow
-- JavaScript
-
-But created with love.
-
-### What I learned
-
-- start using BEM technique;
-- change color of placeholder;
-- use in practise email validation;
-
-### Continued development
-
-- Grid layout module.
-- JavaScript.
-- Practise dealing with Git & GitHub.
-- Practise creating navigation for mobile layout.
-- Explore BEM technique.
+- [x] Create drawing from design (structure of design)(1st task)
+- [x] Create of repo (2nd task)
+- [ ] Create HTML layout (3rd task)
+- [ ] Create CSS layout according style guides (4th task)
+- [ ] Create grid layout for mobile first (5th task)
+- [ ] Craete grid layout for desktop (6th task)
+- [ ] Implement JavaScript (7th task)
+- [ ] Overview of solution and RWD (8th task)
+- [ ] Tada it is done. Congratulation you rich your goal.🎉
 
 
+## We use GitHub flow, so all code changes happen through Pull Request
 
-### Useful resources
+1. Fork the repository (repo) to your own GitHub account
+2. Clone the project to your PC (Git)
+3. Create a new branch locally with a succinct but descriptive name
+4. Make changes (edit, delete, copy, add) on the new brach
+5. Commit changes to the branch
+6. Following any formatting and testing guidelines specific to this repo
+7. Push changes to your fork (repo)
+8. Open a Pull Request (PR) in our repository and follow the PR template so that we can efficiently review the changes.
+9. Wait when your contribution will be accepted (merged) or declined to fix issues.
 
-- [BEM technique](https://sparkbox.com/foundry/bem_by_example) - It lets optimize creation of class names. It stands for 'Block-Element-Modifier'.
-- [How to change placeholder color](https://stackoverflow.com/questions/30117939/how-to-change-the-colour-of-placeholder-using-javascript#30117998) - It helps me on interaction change color of placeholder.
-- [How to change placeholder color](https://stackoverflow.com/questions/30117939/how-to-change-the-colour-of-placeholder-using-javascript#30117998) - It helps me on interaction change color of placeholder.
-- [How to validate email](https://stackoverflow.com/questions/46155/how-can-i-validate-an-email-address-in-javascript#48651640) - It lets implement of email validation.
+## Dealing with issues
 
-## Author
+Write issue reports with detail, background, and sample code
 
-- Frontend Mentor - [@Darionas](https://www.frontendmentor.io/profile/Darionas)
-- Discord - [Darionas#4810] (https://discordapp.com/users/907207939029356574)
+* A quick summary and/or background
+* Steps to reproduce
+    * Be specific!
+    * Give sample code if you can. 
+* What you expected would happen
+* What actually happens
+* Notes (possibly including why you think this might be happening, or stuff you tried that didn't work)
 
+## Use a consistent coding style
 
-## Acknowledgments
+- 4 steps for indentation rather than tabs
 
-- Thank you Frontend Mentor team for opportunity to try, practice, train yourself in different level challenges and gain invaluable experience.
-- Thank you @Vikram from Frontend Mentor for guidance.
-- Thank you @Grace from Frontend Mentor for guidance.
+## License
 
+In short, when you submit code changes, you submissions are understood to be under the [Frontend_Mentor license](https://www.frontendmentor.io/license) that covers the project. Feel free to contact the maintainers if that's a concern.
+
+## References
+
+This document was adapted from the open-source contribution guidelines:
+  * [A basic template for contributing guidlines](https://gist.github.com/briandk/3d2e8b3ec8daf5a27a62) 
+  * [A basic template for contributing guidlines](https://github.com/auth0/open-source-template/blob/master/GENERAL-CONTRIBUTING.md) 
+  * [Fork and Pull Request Workflow](https://github.com/susam/gitpr) 
+  * [Working on your first GitHub issue](https://www.stevejgordon.co.uk/working-on-your-first-github-issue) 
+  * [Understanding GitHub issues](https://www.youtube.com/watch?v=TKJ4RdhyB5Y) 
+  * [Background to deal with Git and GitHub](https://www.w3schools.com/git/default.asp)
